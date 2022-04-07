@@ -11,7 +11,7 @@ import numpy as np
 
 
 # openmodel = open("App/routes/model.pkl", "rb")
-openmodel = open("App/routes/model_lgbm.pkl", "rb")
+openmodel = open("App/routes/model_rf.pkl", "rb")
 
 model = pickle.load(openmodel)
 
