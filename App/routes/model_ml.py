@@ -40,3 +40,8 @@ def predict_page():
 
 
 
+@model_ml.route('/run')
+def runing():
+    
+
+    return '<h1> run </h1>'
