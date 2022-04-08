@@ -17,6 +17,13 @@ model = pickle.load(openmodel)
 
 model_ml = Blueprint("model_ml", __name__, static_folder="../static", template_folder="../templates/")
 @model_ml.route('/')
+def runing():
+    
+
+    return '<h1> run </h1>'
+
+
+    
 @model_ml.route('/predict', methods=['get', 'post'])
 def predict_page():
     print('record : ', request.json)
@@ -40,8 +47,3 @@ def predict_page():
 
 
 
-@model_ml.route('/run')
-def runing():
-    
-
-    return '<h1> run </h1>'
